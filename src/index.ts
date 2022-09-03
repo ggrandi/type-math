@@ -66,7 +66,7 @@ export type M<A extends Numeric, Op extends Operation, B extends Numeric> =
 			: Difference<A, B>
 		: never;
 
-export { M as MathExpr };
+export { M as TypeMath };
 
 export type { Abs, IsNegative, ToNum } from "./base";
 export type { And, Or, Not } from "./logic";

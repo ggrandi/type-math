@@ -1,0 +1,35 @@
+{
+	"name": "type-math",
+	"version": "0.0.0",
+	"description": "Type Level Math Functions",
+	"main": "index.js",
+	"scripts": {
+		"test": "tsc --build tsconfig.json",
+		"build": "tsc --build build.tsconfig.json",
+		"fmt": "prettier --write ./",
+		"prepublish": "rm -rf dist/ && pnpm build && pnpm fmt"
+	},
+	"types": "dist/index.d.ts",
+	"keywords": [
+		"math",
+		"typescript",
+		"type",
+		"type-level"
+	],
+	"author": "ggrandi",
+	"license": "MIT",
+	"prettier": {
+		"useTabs": true,
+		"printWidth": 100
+	},
+	"files": [
+		"dist"
+	],
+	"devDependencies": {
+		"prettier": "^2.7.1",
+		"typescript": "^4.8.2"
+	},
+	"peerDependencies": {
+		"typescript": "^4.8.0"
+	}
+}
